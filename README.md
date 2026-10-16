@@ -21,7 +21,7 @@ claude plugin install operantkit@operantkit
 | Skill `operantkit` | `skills/operantkit/SKILL.md` | Loaded when a conversation is about operant or respondent conditioning, reinforcement schedules, or Method sections. Tells Claude to write the schedule in the DSL and check it with `check_dsl` instead of hand-writing schedule code |
 | DSL quick reference | `skills/operantkit/reference.md` | Atomic and compound schedules, modifiers, time units, annotations |
 | Examples | `skills/operantkit/examples.md` | FR, VI, concurrent VI VI with COD, multiple, chained, DRO, and the tool calls for each |
-| MCP server config | `.claude-plugin/plugin.json` (`mcpServers`) | Starts `operantkit-mcp` over stdio |
+| MCP server config | `.mcp.json` | Starts `operantkit-mcp` over stdio |
 
 The MCP server provides `check_dsl`, `simulate`, `dsl_to_method`, and `method_to_dsl`. See the operantkit-mcp README for inputs and outputs.
 

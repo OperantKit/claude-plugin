@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "operantkit": {
+      "command": "operantkit-mcp"
+    }
+  }
+}

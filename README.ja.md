@@ -21,7 +21,7 @@ claude plugin install operantkit@operantkit
 | skill `operantkit` | `skills/operantkit/SKILL.md` | 会話がオペラント／レスポンデント条件づけ、強化スケジュール、Method 節に関わるときに読み込まれる。スケジュールのコードを自作せず、DSL で書いて `check_dsl` で検査するよう Claude に指示する |
 | DSL 早見表 | `skills/operantkit/reference.md` | 単一スケジュールと複合スケジュール、修飾、時間単位、注釈 |
 | 例 | `skills/operantkit/examples.md` | FR、VI、COD 付き並立 VI VI、多元、連鎖、DRO と、それぞれの道具の呼び方 |
-| MCP サーバ設定 | `.claude-plugin/plugin.json`（`mcpServers`） | `operantkit-mcp` を stdio で起動する |
+| MCP サーバ設定 | `.mcp.json` | `operantkit-mcp` を stdio で起動する |
 
 MCP サーバの道具は `check_dsl`、`simulate`、`dsl_to_method`、`method_to_dsl` です。入力と出力は operantkit-mcp の README を参照してください。
 

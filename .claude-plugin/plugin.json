@@ -9,11 +9,6 @@
   "homepage": "https://github.com/OperantKit/claude-plugin",
   "repository": "https://github.com/OperantKit/claude-plugin",
   "license": "MIT",
-  "mcpServers": {
-    "operantkit": {
-      "command": "operantkit-mcp"
-    }
-  },
   "keywords": [
     "behavior-analysis",
     "operant-conditioning",
