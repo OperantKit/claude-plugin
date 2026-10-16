@@ -1,0 +1,25 @@
+{
+  "name": "operantkit",
+  "version": "0.0.0",
+  "description": "Design, validate, and simulate reinforcement schedules with OperantKit: a skill that teaches contingency-dsl and an MCP server (operantkit-mcp) that checks, simulates, and translates schedules to and from Method sections.",
+  "author": {
+    "name": "OperantKit contributors",
+    "url": "https://github.com/OperantKit"
+  },
+  "homepage": "https://github.com/OperantKit/claude-plugin",
+  "repository": "https://github.com/OperantKit/claude-plugin",
+  "license": "MIT",
+  "mcpServers": {
+    "operantkit": {
+      "command": "operantkit-mcp"
+    }
+  },
+  "keywords": [
+    "behavior-analysis",
+    "operant-conditioning",
+    "reinforcement-schedule",
+    "contingency-dsl",
+    "experiment-design",
+    "mcp"
+  ]
+}

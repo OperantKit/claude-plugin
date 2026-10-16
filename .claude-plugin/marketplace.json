@@ -1,0 +1,15 @@
+{
+  "name": "operantkit",
+  "description": "OperantKit plugins for Claude Code: tools for designing and simulating reinforcement schedules.",
+  "owner": {
+    "name": "OperantKit contributors",
+    "url": "https://github.com/OperantKit"
+  },
+  "plugins": [
+    {
+      "name": "operantkit",
+      "source": "./",
+      "description": "Skill + MCP server for designing, validating, and simulating reinforcement schedules with contingency-dsl."
+    }
+  ]
+}
