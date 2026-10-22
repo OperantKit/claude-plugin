@@ -26,7 +26,7 @@ Conc(VI 30-s, VI 60-s, COD=2-s)     -- canonical: Conc(VI30s, VI60s, COD=2s)
 
 `simulate("Conc(VI30s, VI60s, COD=2s)", exit_time=3600, seed=0)` returns responses and reinforcers per operandum (one Poisson responder per component). `dsl_to_method` writes: "Responses were reinforced under a concurrent VI 30-s VI 60-s schedule. A 2-s changeover delay was in effect."
 
-The two virtual responders respond independently, so changeovers are frequent and the COD withholds most reinforcers (seed 0, 1 h: 9 and 4 reinforcers with `COD=2s`, 118 and 58 without). Compare both before reading a matching result from the simulation.
+The two virtual responders respond independently, so changeovers are frequent and the COD withholds most reinforcers (seed 0, 1 h: 11 and 4 reinforcers with `COD=2s`, 115 and 58 without). Compare both before reading a matching result from the simulation.
 
 ## 4. Multiple schedule with extinction (discrimination training)
 
@@ -51,6 +51,9 @@ DRO 10-s                            -- canonical: DRO10s
 ```
 
 `dsl_to_method("DRO10s")` writes: "Responses were reinforced under a differential-reinforcement-of-other-behavior (DRO) 10-s schedule."
+
+`simulate("DRO10s", exit_time=600, seed=0, virtual_rate_hz=0.05)` gives 22 responses and 46 reinforcers. At the default 1 response/s, pauses of 10 s almost never occur, so it gives 0 reinforcers.
+
 ## From a paper to the DSL
 
 1. `method_to_dsl("<Method section text>")`
